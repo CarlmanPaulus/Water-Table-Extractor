@@ -1,0 +1,108 @@
+GITHUB RELEASE (CLI METHOD) – QUICK REFERENCE
+
+Purpose:
+Create a new GitHub Release and upload a compiled .exe using GitHub CLI (gh)
+
+---
+
+1. PREPARATION
+
+* Make sure GitHub CLI is installed
+
+* Login to GitHub:
+
+  gh auth login
+
+* Ensure your .exe file is ready, for example:
+
+  dist/Your_App_vX.X.X.exe
+
+---
+
+2. BASIC COMMAND
+
+gh release create <version> "<file_path>" --title "<title>" --notes "<description>"
+
+---
+
+3. EXAMPLE
+
+gh release create v1.1.9 "dist/Water_Table_Extractor_v1.1.9.exe" --title "Water Table Extractor v1.1.9" --notes "Only for Marudi sites"
+
+---
+
+4. EXPLANATION
+
+* v1.1.9
+  → Version tag (must be unique)
+
+* "dist/Water_Table_Extractor_v1.1.8.exe"
+  → File to upload (your compiled app)
+
+* --title
+  → Name shown on GitHub release page
+
+* --notes
+  → Description of changes (release notes)
+
+---
+
+5. RESULT
+
+* Creates a new release on GitHub
+* Uploads your .exe file
+* Automatically includes:
+
+  * Source code (zip)
+  * Source code (tar.gz)
+
+---
+
+6. IMPORTANT RULES
+
+* Always create NEW version (do not overwrite old ones)
+
+  v1.1.7 → old
+  v1.1.8 → new
+
+* Use proper versioning:
+
+  v1.0.0 → first version
+  v1.1.0 → new feature
+  v1.1.1 → bug fix
+
+---
+
+7. OPTIONAL COMMANDS
+
+Add more files:
+
+gh release upload v1.1.8 file_name
+
+Delete a release:
+
+gh release delete v1.1.8
+
+---
+
+8. WORKFLOW
+
+9. Update code
+
+10. Build new .exe
+
+11. Run gh release command
+
+12. Share release link
+
+---
+
+9. NOTES
+
+* Repository must be PUBLIC for others to download without login
+* Windows may show warning for unsigned .exe (normal)
+* Use clear version names and descriptions
+
+---
+
+END
