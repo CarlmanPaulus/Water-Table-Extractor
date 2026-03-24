@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pip show:*)",
+      "Bash(pip install:*)",
+      "Bash(python -c \":*)",
+      "Bash(pyinstaller --onefile --windowed --name \"Water_Table_Extractor_v1.1.8\" \"1.1.8 Enhanced Extract Manual WT1.py\")",
+      "Bash(pyinstaller --onefile --windowed --name \"Water_Table_Extractor_v1.1.8\" --exclude-module scipy --exclude-module matplotlib --exclude-module tkinter --exclude-module _tkinter --exclude-module IPython --exclude-module PIL --exclude-module Pillow --exclude-module jedi --exclude-module pygments --exclude-module zmq --exclude-module sqlite3 --exclude-module pytest --exclude-module unittest --exclude-module xmlrpc --exclude-module pydoc --exclude-module doctest --exclude-module setuptools --exclude-module psutil --exclude-module certifi --exclude-module PySide6.QtNetwork --exclude-module PySide6.QtQml --exclude-module PySide6.QtQuick --exclude-module PySide6.QtSvg --exclude-module PySide6.QtOpenGL --exclude-module PySide6.QtDBus --exclude-module PySide6.QtMultimedia --exclude-module PySide6.QtBluetooth --exclude-module PySide6.QtWebEngine --exclude-module PySide6.QtWebEngineWidgets --exclude-module PySide6.QtPdf --exclude-module PySide6.Qt3DCore --hidden-import secrets --noconfirm \"1.1.8 Enhanced Extract Manual WT1.py\")",
+      "Bash(gh auth:*)",
+      "Bash(\"/c/Program Files/GitHub CLI/gh.exe\" auth status)",
+      "Bash(\"/c/Program Files \\(x86\\)/GitHub CLI/gh.exe\" auth status)"
+    ]
+  }
+}
