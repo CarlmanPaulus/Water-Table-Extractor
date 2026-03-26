@@ -1,4 +1,4 @@
-# HydroS v3.0.1
+# HydroS v3.0.3
 
 Hydrology tools for Marudi sites:
 - **Manual Extractor** — extract manual water table data into split CSV based on site/pipes
